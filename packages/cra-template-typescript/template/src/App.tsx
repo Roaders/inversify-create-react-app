@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ClassBased from './components/class-based';
-import FunctionBased from './components/function-based';
+import ClassBasedComponent from './components/class-based';
+import FunctionBasedComponent from './components/function-based';
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <div className="exampleContainer">
-            <ClassBased />
-            <FunctionBased />
+            <ClassBasedComponent />
+            <FunctionBasedComponent />
         </div>
         <a
           className="App-link"

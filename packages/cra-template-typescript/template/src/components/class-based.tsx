@@ -5,7 +5,7 @@ import { ClockService } from "../services/clock-service";
 import { injectable } from "inversify";
 
 @injectable()
-class ClassBased extends Component<{}, {time: string}> {
+class ClassBasedComponent extends Component<{}, {time: string}> {
 
     constructor(params: any, context: any, clock: ClockService){
         super(params, context);
@@ -23,4 +23,4 @@ class ClassBased extends Component<{}, {time: string}> {
     }
 }
 
-export default injectConstructor(ClassBased);
+export default injectConstructor(ClassBasedComponent);
