@@ -568,7 +568,7 @@ function run(
 }
 
 function getInstallPackage(version, originalDirectory) {
-  let packageToInstall = 'react-scripts';
+  let packageToInstall = 'react-scripts-inversify';
   const validSemver = semver.valid(version);
   if (validSemver) {
     packageToInstall += `@${validSemver}`;
