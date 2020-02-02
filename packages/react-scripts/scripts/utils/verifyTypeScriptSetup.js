@@ -129,6 +129,8 @@ function verifyTypeScriptSetup() {
       suggested: 'react',
     },
     paths: { value: undefined, reason: 'aliased imports are not supported' },
+    experimentalDecorators: { value: true, reason: 'to allow injectable decorators' },
+    emitDecoratorMetadata: { value: true, reason: 'to emit metadata used to construct injected classes' },
   };
 
   const formatDiagnosticHost = {
@@ -252,11 +254,11 @@ function verifyTypeScriptSetup() {
     writeJson(paths.appTsConfig, appTsConfig);
   }
 
-  // Reference `react-scripts` types
+  // Reference `react-scripts-inversify` types
   if (!fs.existsSync(paths.appTypeDeclarations)) {
     fs.writeFileSync(
       paths.appTypeDeclarations,
-      `/// <reference types="react-scripts" />${os.EOL}`
+      `/// <reference types="react-scripts-inversify" />${os.EOL}`
     );
   }
 }

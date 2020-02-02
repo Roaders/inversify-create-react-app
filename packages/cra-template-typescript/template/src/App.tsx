@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ClassBasedComponent from './components/class-based';
+import FunctionBasedComponent from './components/function-based';
 
 const App = () => {
   return (
@@ -10,6 +12,10 @@ const App = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <div className="exampleContainer">
+            <ClassBasedComponent />
+            <FunctionBasedComponent />
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
