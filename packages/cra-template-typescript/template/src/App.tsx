@@ -4,7 +4,7 @@ import './App.css';
 import ClassBasedComponent from './components/class-based';
 import FunctionBasedComponent from './components/function-based';
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
